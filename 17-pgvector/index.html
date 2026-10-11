@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vector search</title>
+  <style>
+    body { margin: 0; background: #10140f; color: #e7f0df; font: 16px/1.45 ui-monospace, Consolas, monospace; }
+    main { max-width: 860px; margin: 0 auto; padding: 36px 28px 48px; }
+    h1 { font: 600 28px/1.2 system-ui, sans-serif; margin: 0 0 6px; }
+    p { color: #b7c4ae; margin: 0 0 22px; }
+    h2 { font: 600 14px/1 system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #8ea584; margin: 26px 0 10px; }
+    table { width: 100%; border-collapse: collapse; background: #182016; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #2a3828; }
+    th { color: #c6f27a; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>hackweek_notes</h1>
+    <p>Cosine search on Tiger Cloud service ghw-hackweek. Query: “how warm was the office temperature sensor”. Embeddings are 768-dimensional, from nomic-embed-text. A StreamingDiskANN index sits on the vector column.</p>
+    <h2>nearest notes</h2>
+    <table>
+      <tr><th>topic</th><th>time</th><th>distance</th></tr>
+      <tr><td>office sensor</td><td>2026-10-11 14:35:00+00</td><td>0.2285</td></tr>
+      <tr><td>iot sensors</td><td>2026-10-11 16:30:00+00</td><td>0.3414</td></tr>
+      <tr><td>hourly rollup</td><td>2026-10-11 16:35:00+00</td><td>0.4490</td></tr>
+      <tr><td>crypto trades</td><td>2026-10-11 17:01:00+00</td><td>0.5602</td></tr>
+    </table>
+    <h2>same query, time &gt;= 16:00 UTC</h2>
+    <table>
+      <tr><th>topic</th><th>time</th><th>distance</th></tr>
+      <tr><td>iot sensors</td><td>2026-10-11 16:30:00+00</td><td>0.3414</td></tr>
+      <tr><td>hourly rollup</td><td>2026-10-11 16:35:00+00</td><td>0.4490</td></tr>
+      <tr><td>crypto trades</td><td>2026-10-11 17:01:00+00</td><td>0.5602</td></tr>
+    </table>
+  </main>
+</body>
+</html>
