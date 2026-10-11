@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IoT sensor dataset</title>
+  <style>
+    body { margin: 0; background: #10140f; color: #e7f0df; font: 16px/1.45 ui-monospace, Consolas, monospace; }
+    main { max-width: 860px; margin: 0 auto; padding: 36px 28px 48px; }
+    h1 { font: 600 28px/1.2 system-ui, sans-serif; margin: 0 0 6px; }
+    p { color: #b7c4ae; margin: 0 0 22px; }
+    h2 { font: 600 14px/1 system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #8ea584; margin: 26px 0 10px; }
+    table { width: 100%; border-collapse: collapse; background: #182016; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #2a3828; }
+    th { color: #c6f27a; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>sensor_data</h1>
+    <p>Simulated IoT dataset on Tiger Cloud service ghw-hackweek. sensor_data is a hypertable with 1156 readings from 4 sensors over the last 24 hours.</p>
+    <h2>sensors</h2>
+    <table>
+      <tr><th>id</th><th>type</th><th>location</th></tr>
+      <tr><td>1</td><td>a</td><td>floor</td></tr>
+      <tr><td>2</td><td>a</td><td>ceiling</td></tr>
+      <tr><td>3</td><td>b</td><td>floor</td></tr>
+      <tr><td>4</td><td>b</td><td>ceiling</td></tr>
+    </table>
+    <h2>latest 30-minute averages</h2>
+    <table>
+      <tr><th>location</th><th>period</th><th>avg_temp</th><th>avg_cpu</th></tr>
+      <tr><td>ceiling</td><td>2026-10-11 16:30:00+00</td><td>48.38</td><td>0.603</td></tr>
+      <tr><td>floor</td><td>2026-10-11 16:30:00+00</td><td>65.20</td><td>0.422</td></tr>
+      <tr><td>ceiling</td><td>2026-10-11 16:00:00+00</td><td>49.66</td><td>0.746</td></tr>
+      <tr><td>floor</td><td>2026-10-11 16:00:00+00</td><td>51.34</td><td>0.454</td></tr>
+      <tr><td>ceiling</td><td>2026-10-11 15:30:00+00</td><td>48.24</td><td>0.570</td></tr>
+      <tr><td>floor</td><td>2026-10-11 15:30:00+00</td><td>38.48</td><td>0.563</td></tr>
+    </table>
+  </main>
+</body>
+</html>
