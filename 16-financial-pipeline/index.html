@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Financial data pipeline</title>
+  <style>
+    body { margin: 0; background: #10140f; color: #e7f0df; font: 16px/1.45 ui-monospace, Consolas, monospace; }
+    main { max-width: 920px; margin: 0 auto; padding: 36px 28px 48px; }
+    h1 { font: 600 28px/1.2 system-ui, sans-serif; margin: 0 0 6px; }
+    p { color: #b7c4ae; margin: 0 0 22px; }
+    h2 { font: 600 14px/1 system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #8ea584; margin: 26px 0 10px; }
+    table { width: 100%; border-collapse: collapse; background: #182016; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #2a3828; }
+    th { color: #c6f27a; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>crypto_ticks</h1>
+    <p>Live trades batched into Tiger Cloud service ghw-hackweek on 11 Oct 2026. 110 BTC/USD ticks and 15 ETH/USD ticks, then rolled into one-minute candles.</p>
+    <h2>ticks loaded</h2>
+    <table>
+      <tr><th>symbol</th><th>ticks</th><th>low</th><th>high</th></tr>
+      <tr><td>BTC/USD</td><td>110</td><td>83830.00</td><td>83858.06</td></tr>
+      <tr><td>ETH/USD</td><td>15</td><td>2544.16</td><td>2547.82</td></tr>
+    </table>
+    <h2>one_minute_candle</h2>
+    <table>
+      <tr><th>bucket</th><th>symbol</th><th>open</th><th>high</th><th>low</th><th>close</th></tr>
+      <tr><td>2026-10-11 17:01:00+00</td><td>BTC/USD</td><td>83831.32</td><td>83831.32</td><td>83830.00</td><td>83830.00</td></tr>
+      <tr><td>2026-10-11 17:01:00+00</td><td>ETH/USD</td><td>2544.17</td><td>2544.17</td><td>2544.16</td><td>2544.16</td></tr>
+      <tr><td>2026-10-11 17:00:00+00</td><td>BTC/USD</td><td>83858.05</td><td>83858.06</td><td>83858.05</td><td>83858.05</td></tr>
+      <tr><td>2026-10-11 17:00:00+00</td><td>ETH/USD</td><td>2547.82</td><td>2547.82</td><td>2547.81</td><td>2547.81</td></tr>
+    </table>
+  </main>
+</body>
+</html>
