@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>First hypertable</title>
+  <style>
+    body { margin: 0; background: #10140f; color: #e7f0df; font: 16px/1.45 ui-monospace, Consolas, monospace; }
+    main { max-width: 860px; margin: 0 auto; padding: 36px 28px 48px; }
+    h1 { font: 600 28px/1.2 system-ui, sans-serif; margin: 0 0 6px; }
+    p { color: #b7c4ae; margin: 0 0 22px; }
+    h2 { font: 600 14px/1 system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #8ea584; margin: 26px 0 10px; }
+    table { width: 100%; border-collapse: collapse; background: #182016; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #2a3828; }
+    th { color: #c6f27a; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>conditions</h1>
+    <p>Tiger Cloud service ghw-hackweek. Queried 11 Oct 2026. The table is a hypertable with one time dimension and one chunk.</p>
+    <h2>timescaledb_information.hypertables</h2>
+    <table>
+      <tr><th>hypertable_name</th><th>num_dimensions</th></tr>
+      <tr><td>conditions</td><td>1</td></tr>
+    </table>
+    <h2>show_chunks('conditions')</h2>
+    <table>
+      <tr><th>chunk</th></tr>
+      <tr><td>_timescaledb_internal._hyper_1_1_chunk</td></tr>
+    </table>
+    <h2>SELECT * FROM conditions ORDER BY time DESC</h2>
+    <table>
+      <tr><th>time</th><th>location</th><th>device</th><th>temperature</th><th>humidity</th></tr>
+      <tr><td>2026-10-11 16:35:41+00</td><td>office</td><td>sensor-1</td><td>22.2</td><td>45.1</td></tr>
+      <tr><td>2026-10-11 15:35:41+00</td><td>office</td><td>sensor-1</td><td>22.3</td><td>44.8</td></tr>
+      <tr><td>2026-10-11 14:35:41+00</td><td>office</td><td>sensor-1</td><td>22.1</td><td>45.0</td></tr>
+    </table>
+  </main>
+</body>
+</html>
