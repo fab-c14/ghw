@@ -1,0 +1,10 @@
+Weekend campus events
+Input: weekend of 23 to 25 October 2026
+Source URL: https://www.mlh.com/events
+Checked at: 10:23 PM IST on Oct 13, 2026
+
+Cal Hacks 13.0, Oct 23-25, San Francisco, California, US
+SBUHacks, Oct 23-25, Stony Brook, New York, US
+OxHack '26, Oct 24-25, Oxford, England, GB
+HackTX 26, Oct 24-25, Austin, TX, US
+DuQuantum, Oct 24-25, Durham, NC, US
