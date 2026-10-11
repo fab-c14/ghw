@@ -1,3 +1,3 @@
 # Sign up for a Cursor Pro Account
 
-Not submitted. Both Cursor Pro cards need a real screenshot of the Cursor dashboard showing Pro redeemed. None was available, so nothing was invented.
+The billing page shows Cursor Pro at $20 a month, with the subscription running through November 9, 2026. `screenshot.png` is that dashboard. Both Pro cards use this screenshot.
